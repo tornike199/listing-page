@@ -37,8 +37,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* background-color: yellowgreen; */
 }
 
 .filters {
@@ -49,7 +47,6 @@ main {
   gap: 24px;
   padding: 6px;
   position: relative;
-  /* background-color: aqua; */
 }
 
 .filter-burttons {
@@ -74,13 +71,12 @@ main {
   height: fit-content;
   border: 1px solid var(--header-border-color);
   border-radius: 10px;
-  /* background-color: yellowgreen; */
+
   display: flex;
   align-items: flex-start;
   gap: 24px;
   padding: 24px;
   flex-direction: column;
-  /* display: none; */
 }
 
 .hide {
@@ -90,10 +86,6 @@ main {
 .hidden-filters > p {
   margin-bottom: 24px;
 }
-
-/* .region:hover .hidden-filters {
-  display: block;
-} */
 
 .rotate {
   transform: rotate(180deg);
@@ -113,7 +105,6 @@ main {
 }
 
 .label {
-  /* background-color: #f93b1d; */
   width: 163px;
   display: inline-block;
 }
@@ -128,7 +119,6 @@ main {
   justify-content: flex-end;
   grid-column: 1 / span 3;
   margin-top: 15px;
-  /* background-color: #f93b1d; */
 }
 
 .choose-button {
@@ -192,7 +182,6 @@ main {
 
 .price-hidden > form {
   grid-template-columns: repeat(2, 1fr);
-  /* background-color: yellowgreen; */
 }
 .prise-input {
   margin: 0 0 24px 0;
@@ -200,7 +189,6 @@ main {
   padding: 10px;
   border-radius: 6px;
   font-weight: 400;
-  /* background-color: #f93b1d; */
 }
 
 .prise-input > input {
@@ -209,8 +197,6 @@ main {
 }
 
 .min-price {
-  /* width: 100%; */
-  /* background-color: #f93b1d; */
   display: flex;
   flex-direction: column;
   gap: 220px;
@@ -242,7 +228,6 @@ main {
   margin: 0 auto;
   width: 200px;
   height: 200px;
-  /* background-color: yellowgreen; */
 }
 
 body.dark {
@@ -250,7 +235,6 @@ body.dark {
 }
 
 .max-price {
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
 }
@@ -283,7 +267,6 @@ body.dark {
 
 .size-hidden > form {
   grid-template-columns: repeat(2, 1fr);
-  /* background-color: yellowgreen; */
 }
 
 .room-hidden {
@@ -292,7 +275,6 @@ body.dark {
 
 .room-hidden > form {
   grid-template-columns: repeat(2, 1fr);
-  /* background-color: yellowgreen; */
 }
 /* ################ fonts  ######################## */
 @font-face {
