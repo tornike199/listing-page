@@ -68,8 +68,8 @@ main {
 
 .hidden-filters {
   position: absolute;
-  top: 48px;
-  left: -5px;
+  top: 60px;
+  left: -1px;
   width: fit-content;
   height: fit-content;
   border: 1px solid var(--header-border-color);
@@ -80,6 +80,10 @@ main {
   gap: 24px;
   padding: 24px;
   flex-direction: column;
+  /* display: none; */
+}
+
+.hide {
   display: none;
 }
 
@@ -87,11 +91,11 @@ main {
   margin-bottom: 24px;
 }
 
-.region:hover .hidden-filters {
+/* .region:hover .hidden-filters {
   display: block;
-}
+} */
 
-.region:hover .filter-burttons > img {
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -182,20 +186,116 @@ main {
 .adding-agent-button > img {
   height: 22px;
 }
+.price-hidden {
+  left: 150px;
+}
 
-/* ################ fonts  ######################## */
-@font-face {
-  font-family: FiraGo;
-  src: url(../fonts/firago/FiraGO_OTF_1001/Roman/FiraGO-Regular.otf);
+.price-hidden > form {
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: yellowgreen; */
+}
+.prise-input {
+  margin: 0 0 24px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 400;
+  /* background-color: #f93b1d; */
+}
+
+.prise-input > input {
+  border: none;
+  outline: none;
+}
+
+.min-price {
+  /* width: 100%; */
+  /* background-color: #f93b1d; */
+  display: flex;
+  flex-direction: column;
+  gap: 220px;
+}
+
+.min-price > h5 {
+  align-self: flex-start;
+  margin-bottom: 16px;
+  color: #021526;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.min-price > button {
+  align-self: flex-start;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 8px;
+  color: #2d3648;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #box_1 {
   margin: 0 auto;
   width: 200px;
   height: 200px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 body.dark {
   background-color: var(--black-button-collor);
+}
+
+.max-price {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+}
+
+.max-price > h5 {
+  align-self: flex-start;
+  margin-bottom: 16px;
+  color: #021526;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.max-price > button {
+  align-self: flex-start;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 8px;
+  color: #2d3648;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.size-hidden {
+  left: 370px;
+}
+
+.size-hidden > form {
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: yellowgreen; */
+}
+
+.room-hidden {
+  left: 500px;
+}
+
+.room-hidden > form {
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: yellowgreen; */
+}
+/* ################ fonts  ######################## */
+@font-face {
+  font-family: FiraGo;
+  src: url(../fonts/firago/FiraGO_OTF_1001/Roman/FiraGO-Regular.otf);
 }

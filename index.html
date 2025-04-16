@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
 
-    <script src="./scripts.js" defer></script>
+    <script src="./main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img
-          src="./images/LOGO-02 3.svg"
-          alt="logo"
-          width="150px"
-          height="24px"
-        />
+        <img src="./images/LOGO-02 3.svg" alt="logo" width="150px" height="24px" />
       </div>
     </header>
     <main>
       <div class="filter-and-adding">
         <div class="filters">
           <div class="region">
-            <button class="filter-burttons">
-              რეგიონი <img src="./images/Icon.svg" alt="icone" />
+            <button class="filter-burttons region-button">
+              რეგიონი <img src="./images/Icon.svg" alt="icone" class="errow" />
             </button>
-            <div class="hidden-filters">
+            <div class="hidden-filters region-hidden hide">
               <p>რეგიონის მიხედვით</p>
               <form>
                 <div>
@@ -83,6 +78,134 @@
               </form>
             </div>
           </div>
+          <div class="region">
+            <button class="filter-burttons region-button">
+              საფასო კატეგორია
+              <img src="./images/Icon.svg" alt="icone" class="errow" />
+            </button>
+            <div class="hidden-filters price-hidden hide">
+              <p>ფასის მიხედვით</p>
+              <form>
+                <div class="prise-input">
+                  <input class="prise-from-input" type="text" placeholder="დან" />
+                  <span>₾</span>
+                </div>
+                <div class="prise-input">
+                  <input class="prise-to-input" type="text" placeholder="დან" />
+                  <span>₾</span>
+                </div>
+
+                <div class="min-price">
+                  <h5>მინ.ფასი</h5>
+                  <button>50,000 ₾</button>
+                  <button>100,000 ₾</button>
+                  <button>150,000 ₾</button>
+                  <button>200,000 ₾</button>
+                  <button>200,000 ₾</button>
+                </div>
+                <div class="max-price">
+                  <h5>მაქს.ფასი</h5>
+                  <button>50,000 ₾</button>
+                  <button>100,000 ₾</button>
+                  <button>150,000 ₾</button>
+                  <button>200,000 ₾</button>
+                  <button>200,000 ₾</button>
+                </div>
+                <div></div>
+                <div
+                  style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    /* background-color: bisque; */
+                  "
+                >
+                  <button class="adding-list-button" style="width: fit-content">არჩევა</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="region">
+            <button class="filter-burttons region-button">
+              ფართობი
+              <img src="./images/Icon.svg" alt="icone" class="errow" />
+            </button>
+            <div class="hidden-filters size-hidden hide">
+              <p>ფართობის მიხედვით</p>
+              <form>
+                <div class="prise-input">
+                  <input class="prise-from-input" type="text" placeholder="დან" />
+                  <span>მ<sup>2</sup></span>
+                </div>
+                <div class="prise-input">
+                  <input class="prise-to-input" type="text" placeholder="დან" />
+                  <span>მ<sup>2</sup></span>
+                </div>
+
+                <div class="min-price">
+                  <h5>მინ. მ<sup>2</sup></h5>
+                  <button>50,000 მ<sup>2</sup></button>
+                  <button>100,000 მ<sup>2</sup></button>
+                  <button>150,000 მ<sup>2</sup></button>
+                  <button>200,000 მ<sup>2</sup></button>
+                  <button>200,000 მ<sup>2</sup></button>
+                </div>
+                <div class="max-price">
+                  <h5>მაქს. მ<sup>2</sup></h5>
+                  <button>50,000 მ<sup>2</sup></button>
+                  <button>100,000 მ<sup>2</sup></button>
+                  <button>150,000 მ<sup>2</sup></button>
+                  <button>200,000 მ<sup>2</sup></button>
+                  <button>200,000 მ<sup>2</sup></button>
+                </div>
+                <div></div>
+                <div
+                  style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    /* background-color: bisque; */
+                  "
+                >
+                  <button class="adding-list-button" style="width: fit-content">არჩევა</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="region">
+            <button class="filter-burttons region-button">
+              საძინებლების რაოდენობა
+              <img src="./images/Icon.svg" alt="icone" class="errow" />
+            </button>
+            <div class="hidden-filters room-hidden hide">
+              <p>საძინებლების რაოდენობა</p>
+              <form>
+                <div>
+                  <span
+                    style="
+                      padding: 15px 20px;
+                      border: 1px solid rgba(0, 0, 0, 0.3);
+                      border-radius: 6px;
+                    "
+                    >2</span
+                  >
+                </div>
+                <div></div>
+
+                <div></div>
+                <div
+                  style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    /* background-color: bisque; */
+                  "
+                >
+                  <button class="adding-list-button" style="width: fit-content">არჩევა</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="adding">
           <button class="adding-list-button" id="adding-list-button">
@@ -90,8 +213,7 @@
             ლისტინგის დამატება
           </button>
           <button class="adding-agent-button">
-            <img src="./images/ic_round-plus.svg" alt="plus icone" /> აგენტის
-            დამატება
+            <img src="./images/ic_round-plus.svg" alt="plus icone" /> აგენტის დამატება
           </button>
         </div>
       </div>
