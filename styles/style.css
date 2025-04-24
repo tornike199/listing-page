@@ -16,6 +16,7 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   background-color: var(--body-collor);
+  position: relative;
 }
 
 header {
@@ -77,6 +78,7 @@ main {
   gap: 24px;
   padding: 24px;
   flex-direction: column;
+  background-color: var(--body-collor);
 }
 
 .hide {
@@ -275,6 +277,128 @@ body.dark {
 
 .room-hidden > form {
   grid-template-columns: repeat(2, 1fr);
+}
+
+/* გენტის დამატება  დასაწყისი*/
+
+.agents-edding-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div {
+  width: 1009px;
+  height: 784px;
+  background-color: var(--body-collor);
+  border-radius: 10px;
+  padding: 87px 105px;
+}
+
+.form-div > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #808a93;
+  border-radius: 6px;
+  width: 384px;
+  margin-bottom: 4px;
+  outline: none;
+}
+
+.name-surname {
+  display: flex;
+  gap: 31px;
+}
+
+.emeil-phone {
+  display: flex;
+  gap: 31px;
+}
+
+.upload-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.upload-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.upload-box {
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s;
+}
+
+.upload-box span {
+  font-size: 30px;
+  color: #666;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+.plus {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* აგენტის დამატება დასდასრული */
+
+/* ქარდების დასაწყისი */
+
+.cards {
+  margin-top: 32px;
+  position: relative;
+  z-index: -1;
+}
+
+.form-buttons {
+  display: flex;
+  margin-top: 91px;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 15px;
+}
+
+.hidden {
+  display: none;
 }
 /* ################ fonts  ######################## */
 @font-face {
